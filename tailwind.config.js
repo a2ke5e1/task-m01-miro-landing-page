@@ -4,12 +4,14 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "large": "1440px",
-        "medium": "1380px",
+        "desktop-large": "1440px",
+        "desktop-medium": "1380px",
+        "desktop-small": "1120px",
       },
       colors: {
-        "accent": "#4262FF"
-      }
+        accent: "#4262FF",
+        "on-surface": "#05003899",
+      },
     },
   },
   plugins: [],
