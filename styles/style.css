@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+}
+
+.expandable-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.expandable-nav::after {
+  content: url(../images/down-arrow.svg);
+  display: block;
+  clear: both;
 }
