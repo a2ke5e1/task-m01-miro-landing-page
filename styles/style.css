@@ -27,7 +27,20 @@ html {
   @apply text-sm py-2 bg-tertiary text-black uppercase rounded-xl px-4 font-bold rotate-12 w-fit -right-12 absolute -top-12;
 }
 
-
 .container {
-  @apply desktop-small:mx-auto mx-4 max-w-screen-desktop-small flex flex-col; 
+  @apply desktop-small:mx-auto mx-4 max-w-screen-desktop-small flex flex-col;
+}
+
+.list-check {
+  @apply text-on-surface text-lg flex flex-col gap-4;
+}
+
+.list-check > li {
+  @apply flex gap-2;
+}
+.list-check > li::before {
+  content: url(../images/check.svg);
+  display: inline-block;
+  color: black;
+  margin-right: 0.5rem;
 }
