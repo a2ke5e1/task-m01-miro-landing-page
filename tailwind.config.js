@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         accent: "#4262FF",
         "on-surface": "#05003899",
+        tertiary: "#ffd02f",
       },
     },
   },

@@ -17,3 +17,12 @@ html {
   display: block;
   clear: both;
 }
+
+.collaborate-banner {
+  @apply text-5xl leading-[3.5rem] font-bold flex flex-col text-center items-end mx-auto max-w-md relative;
+}
+
+.collaborate-banner::before {
+  content: "Your idea starts here";
+  @apply text-sm py-2 bg-tertiary text-black uppercase rounded-xl px-4 font-bold rotate-12 w-fit -right-12 absolute -top-12;
+}
