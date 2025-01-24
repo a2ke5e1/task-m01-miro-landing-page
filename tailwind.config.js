@@ -9,9 +9,11 @@ module.exports = {
         "desktop-small": "1120px",
       },
       colors: {
+        secondary: "#050038", 
         accent: "#4262FF",
         "on-surface": "#05003899",
         tertiary: "#ffd02f",
+
       },
     },
   },
