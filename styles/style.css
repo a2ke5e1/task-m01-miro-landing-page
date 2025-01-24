@@ -18,17 +18,8 @@ html {
   clear: both;
 }
 
-.collaborate-banner {
-  @apply text-5xl leading-[3.5rem] font-bold flex flex-col text-center items-end mx-auto max-w-md relative;
-}
-
-.collaborate-banner::before {
-  content: "Your idea starts here";
-  @apply text-sm py-2 bg-tertiary text-black uppercase rounded-xl px-4 font-bold rotate-12 w-fit -right-12 absolute -top-12;
-}
-
 .container {
-  @apply desktop-small:mx-auto mx-4 max-w-screen-desktop-small flex flex-col;
+  @apply desktop-small:mx-auto px-4 sm:px-0 max-w-screen-desktop-small flex flex-col;
 }
 
 .list-check {
