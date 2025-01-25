@@ -20,7 +20,7 @@ html {
 }
 
 .container {
-  @apply desktop-small:mx-auto px-4 sm:px-0 max-w-screen-desktop-small flex flex-col;
+  @apply desktop-small:mx-auto px-4 desktop-small:px-0 max-w-screen-desktop-small flex flex-col;
 }
 
 .list-check {
@@ -39,7 +39,7 @@ html {
 }
 
 .grid-container {
-  @apply grid grid-flow-row sm:grid-cols-3 grid-cols-1 max-w-screen-desktop-small mx-auto sm:p-0 px-4;
+  @apply grid grid-flow-row sm:grid-cols-3 grid-cols-1 max-w-screen-desktop-small mx-auto sm:p-0 px-4 ;
 }
 
 .grid-container > div {
