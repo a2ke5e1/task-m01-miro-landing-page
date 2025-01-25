@@ -164,7 +164,9 @@
 
     <main>
       <!-- Contact Us -->
-      <div class="max-w-screen-desktop-medium mx-auto flex flex-col gap-[6.063rem] mt-[8rem] mb-[6.375rem] px-4 desktop-medium:px-0">
+      <div
+        class="max-w-screen-desktop-medium mx-auto flex flex-col gap-[6.063rem] mt-[8rem] mb-[6.375rem] px-4 desktop-medium:px-0"
+      >
         <h1
           class="text-[3.625rem] before:w-[6.25rem] before:h-[3px] before:bg-[#1F1F1F] items-center flex flex-row font-semibold gap-[2.125rem]"
         >
@@ -256,6 +258,169 @@
           </div>
         </div>
       </div>
+
+      <!-- Get in touch form -->
+
+      <div class="bg-[#F3FAFA]">
+        <div
+          class="max-w-screen-desktop-medium mx-auto py-[6.25rem] flex flex-col gap-[3.75rem] items-center px-4 desktop-medium:px-0"
+        >
+          <h1
+            class="text-[3.625rem] font-semibold text-center leading-[4.375rem]"
+          >
+            Get in touch with us. <br />
+            We're here to assist you.
+          </h1>
+          <form
+            class="max-w-[1013px] bg-white rounded-[1.875rem] grid grid-flow-row sm:grid-cols-2 grid-cols-1  gap-x-6 gap-y-12 py-14 desktop-small:px-[5.813rem] w-full md:px-8 px-4"
+          >
+            <div class="flex flex-col gap-4">
+              <label for="full_name" class="text-[#808080]">Full name</label>
+              <input
+                type="text"
+                id="full_name"
+                name="full_name"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="email" class="text-[#808080]">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="phone_number" class="text-[#808080]"
+                >Phone number</label
+              >
+              <input
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="dob" class="text-[#808080]">Date of birth</label>
+              <input
+                type="text"
+                id="dob"
+                name="dob"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for=" Gender" class="text-[#808080]">Gender</label>
+              <input
+                type="text"
+                id=" Gender"
+                name=" Gender"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="City" class="text-[#808080]">City</label>
+              <input
+                type="text"
+                id="City"
+                name="City"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="State" class="text-[#808080]">State</label>
+              <input
+                type="text"
+                id="State"
+                name="State"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="country" class="text-[#808080]">Country</label>
+              <input
+                type="text"
+                id="country"
+                name="country"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="Adddress" class="text-[#808080]">Adddress</label>
+              <input
+                type="text"
+                id="Adddress"
+                name="Adddress"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="message" class="text-[#808080]">Message</label>
+              <input
+                type="text"
+                id="message"
+                name="message"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="counselling" class="text-[#808080]"
+                >Request a counselling session</label
+              >
+              <div class="flex flex-row gap-4">
+                <div class="flex flex-row gap-2">
+                  <input
+                    type="radio"
+                    id="counselling"
+                    name="counselling"
+                    value="yes"
+                    class=""
+                  /><label class="text-base font-medium">Yes</label>
+                </div>
+                <div class="flex flex-row gap-2">
+                  <input
+                    type="radio"
+                    id="counselling"
+                    name="counselling"
+                    value="no"
+                    class=""
+                  /><label class="text-base font-medium">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <label for="cv" class="text-[#808080]"
+                >Upload your CV/Resume</label
+              >
+              <input
+                type="file"
+                id="cv"
+                name="cv"
+                class="border-b-[1px] border-[#808080] py-2 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-row gap-4 sm:col-span-2">
+              <div class="flex flex-row gap-2">
+                <input
+                  type="checkbox"
+                  id="counselling"
+                  name="counselling"
+                  value="yes"
+                  class=""
+                /><label class="text-base font-medium text-[#808080]"
+                  >Agree terms and conditions</label
+                >
+              </div>
+            </div>
+
+            <button class="bg-accent text-center text-white py-4">Submit Information</button>
+
+          </form>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -279,7 +444,8 @@
               <a href="#">Changelog</a>
             </ul>
             <a href="#" class="inline-flex items-center gap-1 my-4">
-              View demo<span
+              <span class="underline">View demo</span
+              ><span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -342,7 +508,8 @@
               <a href="#">NPOs</a>
             </ul>
             <a href="#" class="inline-flex items-center gap-1 my-4">
-              Contact sales<span
+              <span class="underline">Contact sales</span
+              ><span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
