@@ -68,7 +68,7 @@ summary::marker {
 
 details summary::before {
   content: "+";
-  @apply bg-[#b58569] text-xl rounded-full w-6 h-6 flex items-center justify-center text-white;
+  @apply bg-[#b58569] text-2xl rounded-full w-6 h-6 flex items-center justify-center text-white;
 }
 
 details[open] summary::before {
