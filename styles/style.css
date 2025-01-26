@@ -80,4 +80,54 @@ details[open] summary::before {
   @apply flex flex-row my-[5.25rem] p-2 bg-white rounded-[0.25rem] justify-between;
 }
 
+input[type="radio"] {
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-clip: content-box;
+  background-color: #cfd7fe;
+}
 
+input[type="radio"]:checked {
+  background-color: #cfd7fe;
+  border: 0px solid #cfd7fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #4262ff;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 0.25rem;
+  background-clip: content-box;
+  border: none;
+  background-color: #cfd7fe;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4262ff;
+  border: none;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✔";
+  text-align: center;
+  color: white;
+  display: block;
+  width: 23px;
+  height: 23px;
+  border-radius: 0.25rem;
+  background-color: #4262ff;
+}
