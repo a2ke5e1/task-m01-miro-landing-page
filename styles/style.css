@@ -79,3 +79,5 @@ details[open] summary::before {
   box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.14);
   @apply flex flex-row my-[5.25rem] p-2 bg-white rounded-[0.25rem] justify-between;
 }
+
+
