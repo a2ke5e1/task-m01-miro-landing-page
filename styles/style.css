@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  interpolate-size: allow-keywords;
+}
+
 html {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -47,10 +51,21 @@ html {
 }
 
 details {
-  @apply border-b-[1px] border-[#E5ECF4] py-4;
+  @apply border-b-[1px] border-[#E5ECF4] py-4 overflow-hidden;
 }
 details > * {
 }
+
+details::details-content {
+  block-size: 0;
+  transition: block-size 0.3s, content-visibility 0.3s;
+  transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+  block-size: auto;
+}
+
 details > div {
   @apply text-base leading-8 text-[#343D48];
 }
@@ -68,11 +83,12 @@ summary::marker {
 
 details summary::before {
   content: "+";
-  @apply bg-[#b58569] text-2xl rounded-full w-6 h-6 flex items-center justify-center text-white;
+  @apply bg-[#b58569] text-2xl rounded-full w-6 h-6 flex items-center justify-center text-white transition-transform duration-300;
 }
 
 details[open] summary::before {
   content: "-";
+  @apply rotate-180;
 }
 
 .email-subscribe {
